@@ -47,7 +47,6 @@ Focused on layout, spacing, and responsive design with media queries
 
 --HTML5
 --CSS3
---Custom Fonts via @font-face
 --CSS Variables
 --Responsive Design (Media Queries)
 
