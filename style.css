@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&display=swap');
+
+:root{
+
+  --primaryFont: "Lexend Deca", sans-serif;
+  --secondaryFont: "Big Shoulders", sans-serif;
+
+  --Gold500: hsl(31, 77%, 52%);
+  --Cyan800: hsl(184, 100%, 22%);
+  --Green950: hsl(179, 100%, 13%);
+  --TransparentWhite-paragraphs: hsla(0, 0%, 100%, 0.75);
+  --Gray100-background-headings-buttons: hsl(0, 0%, 95%);
+}
+
+*,*::after, *::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  height:100%;
+}
+img{
+  width: 3.5rem;
+  height: auto;    
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--Gray100-background-headings-buttons);
+  font-family: var(--primaryFont);
+  font-weight: 300;
+  font-size: .85rem;  
+}
+h1,h2{
+  font-family: var(--secondaryFont);
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 1rem 0;
+  color: var(--Gray100-background-headings-buttons);
+  text-transform: uppercase;
+}
+p{
+  color: var(--TransparentWhite-paragraphs);
+  line-height: 1.25rem;
+  margin-bottom: 2rem;
+  
+}
+.container{
+  max-width: 48rem;
+  height: auto; 
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  padding: .5rem;
+}
+.card_1{
+  background-color: var(--Gold500);
+  padding: 2.25rem;
+  flex-basis: 16rem;
+  border-radius: .5rem 0 0 .5rem;
+}
+.card_2{
+  background-color: var(--Cyan800);
+  padding: 2.25rem;
+  flex-basis: 16rem;
+}
+.card_3{
+  background-color: var(--Green950);
+  padding: 2.25rem;
+  flex-basis: 16rem;
+  border-radius:  0 .5rem .5rem 0;
+}
+input{
+  background-color: var(--Gray100-background-headings-buttons);
+  padding: .5rem 1.5rem;
+  border-radius: 20px;
+  border: 2px solid var(--Gray100-background-headings-buttons);
+  cursor: pointer;
+  margin-top: 2.5rem;
+
+}
+.card_1 input{
+  color: var(--Gold500);
+}
+
+.card_2 input{
+  color: var(--Cyan800);
+  margin-bottom: 0;
+}
+.card_3 input{
+  color: var(--Green950);
+}
+input:hover{
+  background-color: transparent;  
+  color: var(--Gray100-background-headings-buttons);
+}
+@media only screen and (max-width:600px){
+   .container{
+  height: auto;   
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem; 
+}
+
+.card_1{
+  border-radius: .5rem .5rem 0 0;
+}
+.card_3{
+  border-radius: 0 0 .5rem .5rem;
+}
+}
